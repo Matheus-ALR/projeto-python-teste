@@ -6,5 +6,10 @@ app = Flask(__name__)
 def index():
     return "<h1>Hello World!!!</h1>"
 
+
+@app.route("/curso")
+def curso():
+    return "<h1>Curso de DEV</h1>"
+
 if __name__ == "__main__":
     app.run()
